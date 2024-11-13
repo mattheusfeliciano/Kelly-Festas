@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw
+}
+  
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+  
+.container button {
+    background-color: #ff6ec7; /* Cor rosa para o botão de cancelar */
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 16px;
+    right: 24px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeito de hover */
+.container button:hover {
+    background-color: #ff3a8c; /* Tom mais escuro de rosa no hover */
+    transform: scale(1.05); /* Efeito de aumentar um pouco o botão */
+}
+
+/* Efeito de click */
+.container button:active {
+    transform: scale(0.98); /* Efeito de apertar o botão */
+} 
+
+/* Cor rosa para o título "Eventos" */
+.events-title {
+    color: #ff6ec7; /* Rosa vibrante */
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container button:hover {
+    box-shadow: rgba(73, 67, 67, 0.2) 0px 7px 7px 0px;
+    transform: scale(1.1);
+}
+  

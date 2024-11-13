@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelly Festas - Contatos</title>
+
+  <!-- Importando FontAwesome para ícones -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Importando a fonte Montserrat */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+    /* Estilos globais */
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Cabeçalho semelhante ao INDEX */
+    header {
+      background-color: #ff6ec7;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Logo dentro de um círculo */
+    .logo-container {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Links de navegação */
+    .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffd1e3;
+    }
+
+    /* Links de redes sociais */
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ffd1e3;
+    }
+
+    /* Conteúdo principal */
+    #root {
+      padding: 40px;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      color: #ff6ec7;
+    }
+
+    /* Estilos para o formulário */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 15px;
+      border: 2px solid #ff6ec7;
+      border-radius: 8px;
+      outline: none;
+      transition: box-shadow 0.3s, border-color 0.3s;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      box-shadow: 0 0 10px rgba(255, 110, 199, 0.5);
+      border-color: #ff6ec7;
+    }
+
+    /* Botão de envio */
+    .submit-btn {
+      background-color: #ff6ec7;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      padding: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #e55aad;
+    }
+
+    /* Botão do WhatsApp */
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* Elementos decorativos animados */
+    .decoration {
+      position: absolute;
+      background-color: rgba(255, 110, 199, 0.1);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .decoration1 {
+      width: 100px;
+      height: 100px;
+      top: 20px;
+      left: -40px;
+      animation-delay: 0s;
+    }
+
+    .decoration2 {
+      width: 80px;
+      height: 80px;
+      top: 300px;
+      right: -30px;
+      animation-delay: 2s;
+    }
+
+    .decoration3 {
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation-delay: 4s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    /* Rodapé */
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      padding: 20px 0;
+      background-color: #ff6ec7;
+      margin-top: 20px;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com logo, links de navegação e redes sociais -->
+  <header>
+    <!-- Logo dentro de um círculo -->
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo Kelly Festas" />
+    </div>
+
+    <!-- Links de navegação -->
+    <nav class="nav-links">
+      <a href="index.html">Página Inicial</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contatos.html">Contatos</a>
+    </nav>
+
+    <!-- Links de redes sociais com ícones FontAwesome -->
+    <div class="social-links">
+      <a href="https://www.instagram.com/p/DAZBoXPRCpO/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=5581982350170&text=Ol%C3%A1%20fiquei%20interessada%20(o)" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal com formulário de contato -->
+  <div id="root">
+    <h1>Entre em Contato Conosco</h1>
+    <p>Preencha o formulário abaixo ou clique no botão para conversar no WhatsApp.</p>
+
+    <form class="contact-form" id="contactForm">
+      <input type="text" id="name" placeholder="Nome" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" placeholder="Sua mensagem" rows="5" required></textarea>
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+
+    <!-- Botão para WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5581982350170&text=Ol%C3%A1%20fiquei%20interessada%20(o)" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> Contato pelo WhatsApp
+    </a>
+
+    <!-- Elementos decorativos animados -->
+    <div class="decoration decoration1"></div>
+    <div class="decoration decoration2"></div>
+    <div class="decoration decoration3"></div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer">
+    <p>Desenvolvido por <a href="https://www.instagram.com/p/DCRZoSKuTuH/">Unifavip Wyden</a></p>
+  </div>
+
+  <script>
+    // Script para manipulação do formulário
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Mensagem enviada com sucesso!');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>

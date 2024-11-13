@@ -1,0 +1,34 @@
+Necessário: 
+
+Vite
+NodeJS 
+React
+Typescript 
+Postgres13
+VS Code
+Insomnia(pra conferir as requisições)
+Site pra transformar imagem em link: https://im.ge/
+
+alguns comandos na execução:
+
+npm install
+npm run dev 
+
+Link Repositório: 
+
+
+
+___________________________________________________
+OBS: 
+
+ATUALIZANDO MINHA TABELA: 
+
+UPDATE food
+SET title = 'Novo Título', image = 'nova_imagem.jpg', price = 9.99
+WHERE id = 3;
+
+
+REMOVENDO DADOS DA MINHA TABELA:  
+
+DELETE FROM food
+WHERE id IN (3, 5, 7);

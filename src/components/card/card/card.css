@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* O card ocupa toda a largura disponível */
+    max-width: 300px; /* Tamanho máximo do card para manter a proporção */
+    border-radius: 12px; /* Bordas arredondadas do card */
+    background-color: #ff6ec7; /* Cor de fundo rosa */
+    color: white; /* Cor da fonte branca */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 16px;
+    text-align: center;
+    overflow: hidden; /* Garante que o conteúdo que sair das bordas seja ocultado */
+}
+
+.card img {
+    width: 100%; /* A imagem vai ocupar toda a largura do card */
+    height: 100%; /* A altura da imagem vai se ajustar ao tamanho do card */
+    object-fit: cover; /* Faz com que a imagem cubra completamente o espaço sem distorção */
+    border-radius: 8px 8px 0 0; /* Bordas arredondadas na parte superior da imagem */
+    margin-bottom: 12px; /* Espaçamento entre a imagem e o conteúdo do card */
+}
+
+/* Estilo para o título ou descrição dentro do card */
+.card h3, .card p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 8px;
+}

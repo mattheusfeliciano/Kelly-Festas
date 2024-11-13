@@ -1,0 +1,102 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 999;
+}
+
+.modal-overlay .modal-body {
+    background-color: #fff;
+    padding: 24px;
+    height: 60%;
+    width: 60%;
+    border-radius: 24px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-overlay .modal-body h2 {
+    font-size: 32px;
+    color: #ff6ec7; /* Rosa vibrante para título */
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Estilo para o botão de Cancelar */
+.modal-overlay .modal-body .btn-cancel {
+    width: 10%;
+    background-color: #e0e0e0; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto mais escura */
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 12px; /* Distância entre os botões */
+}
+
+.modal-overlay .modal-body .input-container {
+    width: calc(100% - 24px);
+}
+
+.modal-overlay .modal-body input {
+    padding: 12px;
+    border: 2px solid #ff6ec7; /* Rosa claro para borda */
+    color: #333;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 12px;
+    width: 100%;
+
+    margin-bottom: 12px;
+    transition: border-color 0.3s ease;
+}
+
+.modal-overlay .modal-body input:focus {
+    border-color: #ff3a8c; /* Borda mais escura no foco */
+    outline: none;
+}
+
+.modal-overlay .modal-body label {
+    color: #ff6ec7; /* Rosa vibrante para rótulos */
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.modal-overlay .modal-body .btn-secondary {
+    position: initial;
+    width: 100%;
+    margin-top: 32px;
+    background-color: #ff6ec7; /* Botão rosa */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.modal-overlay .modal-body .btn-secondary:hover {
+    background-color: #ff3a8c; /* Tom mais escuro de rosa no hover */
+    transform: scale(1.05); /* Efeito de aumentar um pouco o botão */
+}
+
+.modal-overlay .modal-body .btn-secondary:active {
+    transform: scale(0.98); /* Efeito de apertar o botão */
+}
